@@ -107,5 +107,37 @@ namespace StockProject
             Formlar.Tanımlamalar.FrmUrunGrup fr = new Formlar.Tanımlamalar.FrmUrunGrup();
             fr.Show();
         }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Bireysel_Müşteriler.FrmBireyselMusteriKarti fr = new Formlar.Bireysel_Müşteriler.FrmBireyselMusteriKarti();
+            fr.Show();
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Kurumsal_Müşteriler.FrmKurumsalMusteriListesi fr = new Formlar.Kurumsal_Müşteriler.FrmKurumsalMusteriListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Personel.FrmPersonelListesi fr = new Formlar.Personel.FrmPersonelListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urunler.FrmUrunListesi fr = new Formlar.Urunler.FrmUrunListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }
