@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace StockProject.Formlar.Bireysel_Müşteriler
 {
     public partial class FrmBireyselMusteriKarti : Form
     {
+        DbStockProjectEntities db = new DbStockProjectEntities();
         public FrmBireyselMusteriKarti()
         {
             InitializeComponent();
