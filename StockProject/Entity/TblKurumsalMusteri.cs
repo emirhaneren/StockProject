@@ -26,9 +26,9 @@ namespace StockProject.Entity
         public Nullable<int> İlce { get; set; }
         public Nullable<int> Durum { get; set; }
     
-        public virtual ilceler ilceler { get; set; }
-        public virtual iller iller { get; set; }
         public virtual TblDurum TblDurum { get; set; }
         public virtual TblUlke TblUlke { get; set; }
+        public virtual ilceler ilceler { get; set; }
+        public virtual iller iller { get; set; }
     }
 }

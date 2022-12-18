@@ -34,5 +34,17 @@ namespace StockProject.Formlar.Bireysel_Müşteriler
                                            x.Adres,
                                        }).ToList();
         }
+
+        private void FrmBireyselMusteriListesi_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmBireyselMusteriKarti fr = new FrmBireyselMusteriKarti();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("BireyselID").ToString());
+            fr.Show();
+        }
     }
 }

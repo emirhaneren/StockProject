@@ -5,8 +5,6 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="79bd1ce9922e48d58455e8632155ca5f" Name="Diagram1">
-        <EntityTypeShape EntityType="DbStockProjectModel.ilceler" Width="1.5" PointX="3.75" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbStockProjectModel.iller" Width="1.5" PointX="1.5" PointY="8.375" IsExpanded="true" />
         <EntityTypeShape EntityType="DbStockProjectModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbStockProjectModel.TblBireyselMusteri" Width="1.5" PointX="6" PointY="13.625" IsExpanded="true" />
         <EntityTypeShape EntityType="DbStockProjectModel.TblBirim" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
@@ -21,11 +19,6 @@
         <EntityTypeShape EntityType="DbStockProjectModel.TblUrun" Width="1.5" PointX="5.25" PointY="20.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbStockProjectModel.TblUrunGrup" Width="1.5" PointX="3" PointY="29.875" IsExpanded="true" />
         <EntityTypeShape EntityType="DbStockProjectModel.TblUrunHareket" Width="1.5" PointX="7.5" PointY="21.25" IsExpanded="true" />
-        <AssociationConnector Association="DbStockProjectModel.FK_ilceler_iller" ManuallyRouted="false" />
-        <AssociationConnector Association="DbStockProjectModel.FK_TblBireyselMusteri_ilceler" ManuallyRouted="false" />
-        <AssociationConnector Association="DbStockProjectModel.FK_TblKurumsalMusteri_ilceler" ManuallyRouted="false" />
-        <AssociationConnector Association="DbStockProjectModel.FK_TblBireyselMusteri_iller" ManuallyRouted="false" />
-        <AssociationConnector Association="DbStockProjectModel.FK_TblKurumsalMusteri_iller" ManuallyRouted="false" />
         <AssociationConnector Association="DbStockProjectModel.FK_TblBireyselMusteri_TblDurum" ManuallyRouted="false" />
         <AssociationConnector Association="DbStockProjectModel.FK_TblBireyselMusteri_TblUlke" ManuallyRouted="false" />
         <AssociationConnector Association="DbStockProjectModel.FK_TblBirim_TblDurum" ManuallyRouted="false" />
@@ -44,6 +37,13 @@
         <AssociationConnector Association="DbStockProjectModel.FK_TblKurumsalMusteri_TblUlke" ManuallyRouted="false" />
         <AssociationConnector Association="DbStockProjectModel.FK_TblUrun_TblUrunGrup" ManuallyRouted="false" />
         <AssociationConnector Association="DbStockProjectModel.FK_TblUrunHareket_TblUrun" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbStockProjectModel.ilceler" Width="1.5" PointX="5.625" PointY="0.875" />
+        <EntityTypeShape EntityType="DbStockProjectModel.iller" Width="1.5" PointX="3.375" PointY="1" />
+        <AssociationConnector Association="DbStockProjectModel.FK_ilceler_iller" />
+        <AssociationConnector Association="DbStockProjectModel.FK_TblBireyselMusteri_ilceler" />
+        <AssociationConnector Association="DbStockProjectModel.FK_TblKurumsalMusteri_ilceler" />
+        <AssociationConnector Association="DbStockProjectModel.FK_TblBireyselMusteri_iller" />
+        <AssociationConnector Association="DbStockProjectModel.FK_TblKurumsalMusteri_iller" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

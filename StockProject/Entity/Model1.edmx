@@ -4,21 +4,21 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbStockProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbStockProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ilceler">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="ilceadi" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="sehirid" Type="int" Nullable="false" />
+          <Property Name="ilce" Type="nvarchar" MaxLength="255" />
+          <Property Name="sehir" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="iller">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="sehiradi" Type="nvarchar" MaxLength="255" />
+          <Property Name="sehir" Type="nvarchar" MaxLength="255" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -185,7 +185,7 @@
               <PropertyRef Name="id" />
             </Principal>
             <Dependent Role="ilceler">
-              <PropertyRef Name="sehirid" />
+              <PropertyRef Name="sehir" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -563,32 +563,10 @@
             <End Role="TblUrunHareket" EntitySet="TblUrunHareket" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbStockProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="ilceler">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="ilceadi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="sehirid" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="iller" Relationship="Self.FK_ilceler_iller" FromRole="ilceler" ToRole="iller" />
-          <NavigationProperty Name="TblBireyselMusteri" Relationship="Self.FK_TblBireyselMusteri_ilceler" FromRole="ilceler" ToRole="TblBireyselMusteri" />
-          <NavigationProperty Name="TblKurumsalMusteri" Relationship="Self.FK_TblKurumsalMusteri_ilceler" FromRole="ilceler" ToRole="TblKurumsalMusteri" />
-        </EntityType>
-        <EntityType Name="iller">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="sehiradi" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="ilceler" Relationship="Self.FK_ilceler_iller" FromRole="iller" ToRole="ilceler" />
-          <NavigationProperty Name="TblBireyselMusteri" Relationship="Self.FK_TblBireyselMusteri_iller" FromRole="iller" ToRole="TblBireyselMusteri" />
-          <NavigationProperty Name="TblKurumsalMusteri" Relationship="Self.FK_TblKurumsalMusteri_iller" FromRole="iller" ToRole="TblKurumsalMusteri" />
-        </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -614,10 +592,10 @@
           <Property Name="Sehir" Type="Int32" />
           <Property Name="Ilce" Type="Int32" />
           <Property Name="Durum" Type="Int32" />
-          <NavigationProperty Name="ilceler" Relationship="Self.FK_TblBireyselMusteri_ilceler" FromRole="TblBireyselMusteri" ToRole="ilceler" />
-          <NavigationProperty Name="iller" Relationship="Self.FK_TblBireyselMusteri_iller" FromRole="TblBireyselMusteri" ToRole="iller" />
           <NavigationProperty Name="TblDurum" Relationship="Self.FK_TblBireyselMusteri_TblDurum" FromRole="TblBireyselMusteri" ToRole="TblDurum" />
           <NavigationProperty Name="TblUlke" Relationship="Self.FK_TblBireyselMusteri_TblUlke" FromRole="TblBireyselMusteri" ToRole="TblUlke" />
+          <NavigationProperty Name="ilceler" Relationship="DbStockProjectModel.FK_TblBireyselMusteri_ilceler" FromRole="TblBireyselMusteri" ToRole="ilceler" />
+          <NavigationProperty Name="iller" Relationship="DbStockProjectModel.FK_TblBireyselMusteri_iller" FromRole="TblBireyselMusteri" ToRole="iller" />
         </EntityType>
         <EntityType Name="TblBirim">
           <Key>
@@ -709,10 +687,10 @@
           <Property Name="Sehir" Type="Int32" />
           <Property Name="İlce" Type="Int32" />
           <Property Name="Durum" Type="Int32" />
-          <NavigationProperty Name="ilceler" Relationship="Self.FK_TblKurumsalMusteri_ilceler" FromRole="TblKurumsalMusteri" ToRole="ilceler" />
-          <NavigationProperty Name="iller" Relationship="Self.FK_TblKurumsalMusteri_iller" FromRole="TblKurumsalMusteri" ToRole="iller" />
           <NavigationProperty Name="TblDurum" Relationship="Self.FK_TblKurumsalMusteri_TblDurum" FromRole="TblKurumsalMusteri" ToRole="TblDurum" />
           <NavigationProperty Name="TblUlke" Relationship="Self.FK_TblKurumsalMusteri_TblUlke" FromRole="TblKurumsalMusteri" ToRole="TblUlke" />
+          <NavigationProperty Name="ilceler" Relationship="DbStockProjectModel.FK_TblKurumsalMusteri_ilceler" FromRole="TblKurumsalMusteri" ToRole="ilceler" />
+          <NavigationProperty Name="iller" Relationship="DbStockProjectModel.FK_TblKurumsalMusteri_iller" FromRole="TblKurumsalMusteri" ToRole="iller" />
         </EntityType>
         <EntityType Name="TblPersonel">
           <Key>
@@ -786,66 +764,6 @@
           <Property Name="Aciklama" Type="String" MaxLength="1000" FixedLength="true" Unicode="true" />
           <NavigationProperty Name="TblUrun" Relationship="Self.FK_TblUrunHareket_TblUrun" FromRole="TblUrunHareket" ToRole="TblUrun" />
         </EntityType>
-        <Association Name="FK_ilceler_iller">
-          <End Role="iller" Type="Self.iller" Multiplicity="1" />
-          <End Role="ilceler" Type="Self.ilceler" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="iller">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="ilceler">
-              <PropertyRef Name="sehirid" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_TblBireyselMusteri_ilceler">
-          <End Role="ilceler" Type="Self.ilceler" Multiplicity="0..1" />
-          <End Role="TblBireyselMusteri" Type="Self.TblBireyselMusteri" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="ilceler">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="TblBireyselMusteri">
-              <PropertyRef Name="Ilce" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_TblKurumsalMusteri_ilceler">
-          <End Role="ilceler" Type="Self.ilceler" Multiplicity="0..1" />
-          <End Role="TblKurumsalMusteri" Type="Self.TblKurumsalMusteri" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="ilceler">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="TblKurumsalMusteri">
-              <PropertyRef Name="İlce" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_TblBireyselMusteri_iller">
-          <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
-          <End Role="TblBireyselMusteri" Type="Self.TblBireyselMusteri" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="iller">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="TblBireyselMusteri">
-              <PropertyRef Name="Sehir" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_TblKurumsalMusteri_iller">
-          <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
-          <End Role="TblKurumsalMusteri" Type="Self.TblKurumsalMusteri" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="iller">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="TblKurumsalMusteri">
-              <PropertyRef Name="Sehir" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_TblBireyselMusteri_TblDurum">
           <End Role="TblDurum" Type="Self.TblDurum" Multiplicity="0..1" />
           <End Role="TblBireyselMusteri" Type="Self.TblBireyselMusteri" Multiplicity="*" />
@@ -1063,8 +981,6 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="DbStockProjectEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="ilceler" EntityType="Self.ilceler" />
-          <EntitySet Name="iller" EntityType="Self.iller" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="TblBireyselMusteri" EntityType="Self.TblBireyselMusteri" />
           <EntitySet Name="TblBirim" EntityType="Self.TblBirim" />
@@ -1079,26 +995,6 @@
           <EntitySet Name="TblUrun" EntityType="Self.TblUrun" />
           <EntitySet Name="TblUrunGrup" EntityType="Self.TblUrunGrup" />
           <EntitySet Name="TblUrunHareket" EntityType="Self.TblUrunHareket" />
-          <AssociationSet Name="FK_ilceler_iller" Association="Self.FK_ilceler_iller">
-            <End Role="iller" EntitySet="iller" />
-            <End Role="ilceler" EntitySet="ilceler" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TblBireyselMusteri_ilceler" Association="Self.FK_TblBireyselMusteri_ilceler">
-            <End Role="ilceler" EntitySet="ilceler" />
-            <End Role="TblBireyselMusteri" EntitySet="TblBireyselMusteri" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TblKurumsalMusteri_ilceler" Association="Self.FK_TblKurumsalMusteri_ilceler">
-            <End Role="ilceler" EntitySet="ilceler" />
-            <End Role="TblKurumsalMusteri" EntitySet="TblKurumsalMusteri" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TblBireyselMusteri_iller" Association="Self.FK_TblBireyselMusteri_iller">
-            <End Role="iller" EntitySet="iller" />
-            <End Role="TblBireyselMusteri" EntitySet="TblBireyselMusteri" />
-          </AssociationSet>
-          <AssociationSet Name="FK_TblKurumsalMusteri_iller" Association="Self.FK_TblKurumsalMusteri_iller">
-            <End Role="iller" EntitySet="iller" />
-            <End Role="TblKurumsalMusteri" EntitySet="TblKurumsalMusteri" />
-          </AssociationSet>
           <AssociationSet Name="FK_TblBireyselMusteri_TblDurum" Association="Self.FK_TblBireyselMusteri_TblDurum">
             <End Role="TblDurum" EntitySet="TblDurum" />
             <End Role="TblBireyselMusteri" EntitySet="TblBireyselMusteri" />
@@ -1171,30 +1067,116 @@
             <End Role="TblUrun" EntitySet="TblUrun" />
             <End Role="TblUrunHareket" EntitySet="TblUrunHareket" />
           </AssociationSet>
+          <EntitySet Name="ilceler" EntityType="DbStockProjectModel.ilceler" />
+          <EntitySet Name="iller" EntityType="DbStockProjectModel.iller" />
+          <AssociationSet Name="FK_ilceler_iller" Association="DbStockProjectModel.FK_ilceler_iller">
+            <End Role="iller" EntitySet="iller" />
+            <End Role="ilceler" EntitySet="ilceler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblBireyselMusteri_ilceler" Association="DbStockProjectModel.FK_TblBireyselMusteri_ilceler">
+            <End Role="ilceler" EntitySet="ilceler" />
+            <End Role="TblBireyselMusteri" EntitySet="TblBireyselMusteri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblKurumsalMusteri_ilceler" Association="DbStockProjectModel.FK_TblKurumsalMusteri_ilceler">
+            <End Role="ilceler" EntitySet="ilceler" />
+            <End Role="TblKurumsalMusteri" EntitySet="TblKurumsalMusteri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblBireyselMusteri_iller" Association="DbStockProjectModel.FK_TblBireyselMusteri_iller">
+            <End Role="iller" EntitySet="iller" />
+            <End Role="TblBireyselMusteri" EntitySet="TblBireyselMusteri" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblKurumsalMusteri_iller" Association="DbStockProjectModel.FK_TblKurumsalMusteri_iller">
+            <End Role="iller" EntitySet="iller" />
+            <End Role="TblKurumsalMusteri" EntitySet="TblKurumsalMusteri" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="ilceler">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ilce" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="sehir" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="iller" Relationship="DbStockProjectModel.FK_ilceler_iller" FromRole="ilceler" ToRole="iller" />
+          <NavigationProperty Name="TblBireyselMusteri" Relationship="DbStockProjectModel.FK_TblBireyselMusteri_ilceler" FromRole="ilceler" ToRole="TblBireyselMusteri" />
+          <NavigationProperty Name="TblKurumsalMusteri" Relationship="DbStockProjectModel.FK_TblKurumsalMusteri_ilceler" FromRole="ilceler" ToRole="TblKurumsalMusteri" />
+        </EntityType>
+        <EntityType Name="iller">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sehir" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ilceler" Relationship="DbStockProjectModel.FK_ilceler_iller" FromRole="iller" ToRole="ilceler" />
+          <NavigationProperty Name="TblBireyselMusteri" Relationship="DbStockProjectModel.FK_TblBireyselMusteri_iller" FromRole="iller" ToRole="TblBireyselMusteri" />
+          <NavigationProperty Name="TblKurumsalMusteri" Relationship="DbStockProjectModel.FK_TblKurumsalMusteri_iller" FromRole="iller" ToRole="TblKurumsalMusteri" />
+        </EntityType>
+        <Association Name="FK_ilceler_iller">
+          <End Type="DbStockProjectModel.iller" Role="iller" Multiplicity="1" />
+          <End Type="DbStockProjectModel.ilceler" Role="ilceler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="iller">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ilceler">
+              <PropertyRef Name="sehir" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblBireyselMusteri_ilceler">
+          <End Type="DbStockProjectModel.ilceler" Role="ilceler" Multiplicity="0..1" />
+          <End Type="DbStockProjectModel.TblBireyselMusteri" Role="TblBireyselMusteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ilceler">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="TblBireyselMusteri">
+              <PropertyRef Name="Ilce" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblKurumsalMusteri_ilceler">
+          <End Type="DbStockProjectModel.ilceler" Role="ilceler" Multiplicity="0..1" />
+          <End Type="DbStockProjectModel.TblKurumsalMusteri" Role="TblKurumsalMusteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ilceler">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="TblKurumsalMusteri">
+              <PropertyRef Name="İlce" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblBireyselMusteri_iller">
+          <End Type="DbStockProjectModel.iller" Role="iller" Multiplicity="0..1" />
+          <End Type="DbStockProjectModel.TblBireyselMusteri" Role="TblBireyselMusteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="iller">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="TblBireyselMusteri">
+              <PropertyRef Name="Sehir" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblKurumsalMusteri_iller">
+          <End Type="DbStockProjectModel.iller" Role="iller" Multiplicity="0..1" />
+          <End Type="DbStockProjectModel.TblKurumsalMusteri" Role="TblKurumsalMusteri" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="iller">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="TblKurumsalMusteri">
+              <PropertyRef Name="Sehir" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DbStockProjectModelStoreContainer" CdmEntityContainer="DbStockProjectEntities">
-          <EntitySetMapping Name="ilceler">
-            <EntityTypeMapping TypeName="DbStockProjectModel.ilceler">
-              <MappingFragment StoreEntitySet="ilceler">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="ilceadi" ColumnName="ilceadi" />
-                <ScalarProperty Name="sehirid" ColumnName="sehirid" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="iller">
-            <EntityTypeMapping TypeName="DbStockProjectModel.iller">
-              <MappingFragment StoreEntitySet="iller">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="sehiradi" ColumnName="sehiradi" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
             <EntityTypeMapping TypeName="DbStockProjectModel.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">
@@ -1363,6 +1345,23 @@
                 <ScalarProperty Name="Bakiye" ColumnName="Bakiye" />
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
                 <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ilceler">
+            <EntityTypeMapping TypeName="DbStockProjectModel.ilceler">
+              <MappingFragment StoreEntitySet="ilceler">
+                <ScalarProperty Name="sehir" ColumnName="sehir" />
+                <ScalarProperty Name="ilce" ColumnName="ilce" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="iller">
+            <EntityTypeMapping TypeName="DbStockProjectModel.iller">
+              <MappingFragment StoreEntitySet="iller">
+                <ScalarProperty Name="sehir" ColumnName="sehir" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

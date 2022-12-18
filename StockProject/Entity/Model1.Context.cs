@@ -25,8 +25,6 @@ namespace StockProject.Entity
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<ilceler> ilceler { get; set; }
-        public virtual DbSet<iller> iller { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TblBireyselMusteri> TblBireyselMusteri { get; set; }
         public virtual DbSet<TblBirim> TblBirim { get; set; }
@@ -41,5 +39,7 @@ namespace StockProject.Entity
         public virtual DbSet<TblUrun> TblUrun { get; set; }
         public virtual DbSet<TblUrunGrup> TblUrunGrup { get; set; }
         public virtual DbSet<TblUrunHareket> TblUrunHareket { get; set; }
+        public virtual DbSet<ilceler> ilceler { get; set; }
+        public virtual DbSet<iller> iller { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace StockProject.Entity
         }
     
         public int id { get; set; }
-        public string sehiradi { get; set; }
+        public string sehir { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ilceler> ilceler { get; set; }
