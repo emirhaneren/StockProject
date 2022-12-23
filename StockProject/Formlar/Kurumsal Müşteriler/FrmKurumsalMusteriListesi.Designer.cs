@@ -51,6 +51,7 @@ namespace StockProject.Formlar.Kurumsal_Müşteriler
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // FrmKurumsalMusteriListesi
             // 
@@ -63,6 +64,7 @@ namespace StockProject.Formlar.Kurumsal_Müşteriler
             this.Name = "FrmKurumsalMusteriListesi";
             this.Text = "Kurumsal Müşteri Listesi";
             this.Load += new System.EventHandler(this.FrmKurumsalMusteriListesi_Load);
+            this.DoubleClick += new System.EventHandler(this.FrmKurumsalMusteriListesi_DoubleClick);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

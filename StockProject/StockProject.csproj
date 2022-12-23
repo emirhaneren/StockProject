@@ -164,6 +164,12 @@
     <Compile Include="Formlar\Bireysel Müşteriler\FrmBireyselMusteriListesi.Designer.cs">
       <DependentUpon>FrmBireyselMusteriListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Kurumsal Müşteriler\FrmKurumsalMusteriKartı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Kurumsal Müşteriler\FrmKurumsalMusteriKartı.Designer.cs">
+      <DependentUpon>FrmKurumsalMusteriKartı.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Kurumsal Müşteriler\FrmKurumsalMusteriListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Bireysel Müşteriler\FrmBireyselMusteriListesi.resx">
       <DependentUpon>FrmBireyselMusteriListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Kurumsal Müşteriler\FrmKurumsalMusteriKartı.resx">
+      <DependentUpon>FrmKurumsalMusteriKartı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Kurumsal Müşteriler\FrmKurumsalMusteriListesi.resx">
       <DependentUpon>FrmKurumsalMusteriListesi.cs</DependentUpon>

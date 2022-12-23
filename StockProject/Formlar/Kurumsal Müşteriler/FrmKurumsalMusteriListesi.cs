@@ -33,5 +33,17 @@ namespace StockProject.Formlar.Kurumsal_Müşteriler
                                            x.Adres
                                        }).ToList();
         }
+
+        private void FrmKurumsalMusteriListesi_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmKurumsalMusteriKartı fr = new FrmKurumsalMusteriKartı();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("KurumsalID").ToString());
+            fr.Show();
+        }
     }
 }
