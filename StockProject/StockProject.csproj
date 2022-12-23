@@ -176,6 +176,12 @@
     <Compile Include="Formlar\Kurumsal Müşteriler\FrmKurumsalMusteriListesi.Designer.cs">
       <DependentUpon>FrmKurumsalMusteriListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Personel\FrmPersonelKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Personel\FrmPersonelKarti.Designer.cs">
+      <DependentUpon>FrmPersonelKarti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Personel\FrmPersonelListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Kurumsal Müşteriler\FrmKurumsalMusteriListesi.resx">
       <DependentUpon>FrmKurumsalMusteriListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Personel\FrmPersonelKarti.resx">
+      <DependentUpon>FrmPersonelKarti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Personel\FrmPersonelListesi.resx">
       <DependentUpon>FrmPersonelListesi.cs</DependentUpon>
