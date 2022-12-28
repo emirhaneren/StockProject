@@ -1,7 +1,7 @@
 ﻿
 namespace StockProject.Formlar.Urunler
 {
-    partial class FrmUrunListesi
+    partial class FrmUrunCikisHareketleri
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,7 @@ namespace StockProject.Formlar.Urunler
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(1184, 461);
-            this.gridControl1.TabIndex = 1;
+            this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -53,15 +53,17 @@ namespace StockProject.Formlar.Urunler
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
-            // FrmUrunListesi
+            // FrmUrunCikisHareketleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.gridControl1);
-            this.Name = "FrmUrunListesi";
-            this.Text = "Ürün Listesi";
-            this.Load += new System.EventHandler(this.FrmUrunListesi_Load);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FrmUrunCikisHareketleri";
+            this.Text = "Ürün Çıkışları";
+            this.Load += new System.EventHandler(this.FrmUrunCikisHareketleri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);

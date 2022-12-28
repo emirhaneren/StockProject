@@ -137,7 +137,9 @@ namespace StockProject
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            Formlar.Grafikler.UrunStokGrafigi fr = new Formlar.Grafikler.UrunStokGrafigi();
+            fr.MdiParent = this;
+            fr.Show();
         }
 
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -149,6 +151,32 @@ namespace StockProject
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Personel.FrmPersonelKarti fr = new Formlar.Personel.FrmPersonelKarti();
+            fr.Show();
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urunler.FrmUrunKarti fr = new Formlar.Urunler.FrmUrunKarti();
+            fr.Show();
+        }
+
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urunler.FrmUrunHareketTanimi fr = new Formlar.Urunler.FrmUrunHareketTanimi();
+            fr.Show();
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urunler.FrmUrunGirisHareketleri fr = new Formlar.Urunler.FrmUrunGirisHareketleri();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urunler.FrmUrunCikisHareketleri fr = new Formlar.Urunler.FrmUrunCikisHareketleri();
+            fr.MdiParent = this;
             fr.Show();
         }
     }

@@ -24,6 +24,7 @@ namespace StockProject.Formlar.Urunler
             gridControl1.DataSource = (from x in db.TblUrun
                                        select new
                                        {
+                                           x.UrunID,
                                            x.UrunAd,
                                            x.TblUrunGrup.UrunGrupAd,
                                            x.TblBirim.BirimAd,
@@ -32,6 +33,13 @@ namespace StockProject.Formlar.Urunler
                                            x.Toplam,
                                            x.TblDurum.DurumAd
                                        }).ToList();
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmUrunKarti fr = new FrmUrunKarti();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("UrunID").ToString());
+            fr.Show();
         }
     }
 }
