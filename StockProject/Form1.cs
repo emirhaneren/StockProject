@@ -139,5 +139,17 @@ namespace StockProject
         {
 
         }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Kurumsal_Müşteriler.FrmKurumsalMusteriKartı fr = new Formlar.Kurumsal_Müşteriler.FrmKurumsalMusteriKartı();
+            fr.Show();
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Personel.FrmPersonelKarti fr = new Formlar.Personel.FrmPersonelKarti();
+            fr.Show();
+        }
     }
 }
