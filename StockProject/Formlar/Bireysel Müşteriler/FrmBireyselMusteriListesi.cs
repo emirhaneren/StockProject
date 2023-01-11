@@ -46,5 +46,22 @@ namespace StockProject.Formlar.Bireysel_Müşteriler
             fr.id = int.Parse(gridView1.GetFocusedRowCellValue("BireyselID").ToString());
             fr.Show();
         }
+
+        private void silToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gridView1.DeleteRow(gridView1.FocusedRowHandle);
+            db.SaveChanges();
+        }
+
+        private void vazgeçToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }
