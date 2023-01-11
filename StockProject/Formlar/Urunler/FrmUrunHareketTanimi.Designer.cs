@@ -318,7 +318,7 @@ namespace StockProject.Formlar.Urunler
             // BtnGuncelle
             // 
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(235, 13);
+            this.BtnGuncelle.Location = new System.Drawing.Point(115, 5);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(118, 41);
             this.BtnGuncelle.TabIndex = 2;
@@ -328,7 +328,7 @@ namespace StockProject.Formlar.Urunler
             // BtnKaydet
             // 
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(115, 13);
+            this.BtnKaydet.Location = new System.Drawing.Point(239, 5);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(114, 41);
             this.BtnKaydet.TabIndex = 1;
@@ -338,7 +338,7 @@ namespace StockProject.Formlar.Urunler
             // BtnVazgec
             // 
             this.BtnVazgec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnVazgec.ImageOptions.Image")));
-            this.BtnVazgec.Location = new System.Drawing.Point(359, 13);
+            this.BtnVazgec.Location = new System.Drawing.Point(359, 5);
             this.BtnVazgec.Name = "BtnVazgec";
             this.BtnVazgec.Size = new System.Drawing.Size(118, 41);
             this.BtnVazgec.TabIndex = 0;
@@ -353,7 +353,7 @@ namespace StockProject.Formlar.Urunler
             this.groupControl7.Location = new System.Drawing.Point(5, 285);
             this.groupControl7.Name = "groupControl7";
             this.groupControl7.ShowCaption = false;
-            this.groupControl7.Size = new System.Drawing.Size(484, 63);
+            this.groupControl7.Size = new System.Drawing.Size(484, 52);
             this.groupControl7.TabIndex = 20;
             this.groupControl7.Text = "groupControl7";
             // 
@@ -375,7 +375,7 @@ namespace StockProject.Formlar.Urunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 355);
+            this.ClientSize = new System.Drawing.Size(494, 341);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl6);
             this.Controls.Add(this.groupControl7);

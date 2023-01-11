@@ -46,6 +46,10 @@ namespace StockProject.Formlar.Bireysel_Müşteriler
                 lookUpEditSehir.EditValue = bmusteri.Sehir;
                 lookUpEditIlce.EditValue = bmusteri.Ilce;
             }
+            else
+            {
+                BtnGuncelle.Visible = false;
+            }
             //lookupeditleri forma bağlama
             lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke select new { x.UlkeID, x.UlkeAd }).ToList();
             lookUpEditSehir.Properties.DataSource = (from x in db.iller select new { x.id, x.sehir }).ToList();

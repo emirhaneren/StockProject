@@ -48,6 +48,10 @@ namespace StockProject.Formlar.Personel
                 labelControl15.Text = personel.KimlikOn;
                 labelControl16.Text = personel.KimlikArka;
             }
+            else
+            {
+                BtnGuncelle.Visible = false;
+            }
 
             lookUpEditDepartman.Properties.DataSource = (from x in db.TblDepartman select new { x.DepartmanID, x.DepartmanAd }).ToList();
             lookUpEditGorev.Properties.DataSource = (from x in db.TblGorev select new { x.GorevID, x.GorevAd }).ToList();

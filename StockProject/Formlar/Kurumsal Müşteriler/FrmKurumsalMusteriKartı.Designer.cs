@@ -138,7 +138,7 @@ namespace StockProject.Formlar.Kurumsal_Müşteriler
             // BtnGuncelle
             // 
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(233, 5);
+            this.BtnGuncelle.Location = new System.Drawing.Point(113, 5);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(118, 41);
             this.BtnGuncelle.TabIndex = 2;
@@ -148,7 +148,7 @@ namespace StockProject.Formlar.Kurumsal_Müşteriler
             // BtnKaydet
             // 
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(113, 5);
+            this.BtnKaydet.Location = new System.Drawing.Point(237, 5);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(114, 41);
             this.BtnKaydet.TabIndex = 1;

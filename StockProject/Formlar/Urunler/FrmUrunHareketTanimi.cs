@@ -46,6 +46,10 @@ namespace StockProject.Formlar.Urunler
                 comboBox1.Text = urun.HareketTuru;
                 dateEdit1.Text = urun.Tarih.ToString();
             }
+            else
+            {
+                BtnGuncelle.Visible = false;
+            }
         }
         //Vazgeç Butonu
         private void BtnVazgec_Click(object sender, EventArgs e)

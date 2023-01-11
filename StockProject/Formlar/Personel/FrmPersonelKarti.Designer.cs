@@ -50,31 +50,31 @@ namespace StockProject.Formlar.Personel
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtAdSoyad = new DevExpress.XtraEditors.TextEdit();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
-            this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtAciklama = new DevExpress.XtraEditors.MemoEdit();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            this.pictureEditKimlikOn = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEditKimlikArka = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEditKimlikOn = new DevExpress.XtraEditors.PictureEdit();
+            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtAciklama = new DevExpress.XtraEditors.MemoEdit();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtAdres = new DevExpress.XtraEditors.MemoEdit();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.TxtTelefon = new DevExpress.XtraEditors.TextEdit();
-            this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtMail = new DevExpress.XtraEditors.TextEdit();
-            this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
-            this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
+            this.TxtMail = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
+            this.TxtTelefon = new DevExpress.XtraEditors.TextEdit();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.TxtAdres = new DevExpress.XtraEditors.MemoEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -93,27 +93,27 @@ namespace StockProject.Formlar.Personel
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAdSoyad.Properties)).BeginInit();
             this.xtraTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
-            this.groupControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEditKimlikOn.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEditKimlikArka.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEditKimlikOn.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
+            this.groupControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
             this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
-            this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.SuspendLayout();
@@ -342,6 +342,37 @@ namespace StockProject.Formlar.Personel
             this.xtraTabPage2.Size = new System.Drawing.Size(482, 239);
             this.xtraTabPage2.Text = "Dökümanlar";
             // 
+            // groupControl5
+            // 
+            this.groupControl5.Controls.Add(this.pictureEditKimlikArka);
+            this.groupControl5.Controls.Add(this.pictureEditKimlikOn);
+            this.groupControl5.Location = new System.Drawing.Point(8, 117);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.ShowCaption = false;
+            this.groupControl5.Size = new System.Drawing.Size(467, 119);
+            this.groupControl5.TabIndex = 5;
+            this.groupControl5.Text = "groupControl5";
+            // 
+            // pictureEditKimlikArka
+            // 
+            this.pictureEditKimlikArka.Location = new System.Drawing.Point(237, 5);
+            this.pictureEditKimlikArka.Name = "pictureEditKimlikArka";
+            this.pictureEditKimlikArka.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEditKimlikArka.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEditKimlikArka.Size = new System.Drawing.Size(225, 107);
+            this.pictureEditKimlikArka.TabIndex = 1;
+            this.pictureEditKimlikArka.EditValueChanged += new System.EventHandler(this.pictureEditKimlikArka_EditValueChanged);
+            // 
+            // pictureEditKimlikOn
+            // 
+            this.pictureEditKimlikOn.Location = new System.Drawing.Point(5, 5);
+            this.pictureEditKimlikOn.Name = "pictureEditKimlikOn";
+            this.pictureEditKimlikOn.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEditKimlikOn.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEditKimlikOn.Size = new System.Drawing.Size(226, 107);
+            this.pictureEditKimlikOn.TabIndex = 0;
+            this.pictureEditKimlikOn.EditValueChanged += new System.EventHandler(this.pictureEditKimlikOn_EditValueChanged);
+            // 
             // groupControl6
             // 
             this.groupControl6.Controls.Add(this.labelControl16);
@@ -356,6 +387,39 @@ namespace StockProject.Formlar.Personel
             this.groupControl6.TabIndex = 4;
             this.groupControl6.Text = "groupControl6";
             // 
+            // labelControl16
+            // 
+            this.labelControl16.Location = new System.Drawing.Point(6, 36);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(69, 13);
+            this.labelControl16.TabIndex = 6;
+            this.labelControl16.Text = "labelControl16";
+            this.labelControl16.Visible = false;
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Location = new System.Drawing.Point(6, 55);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(69, 13);
+            this.labelControl15.TabIndex = 5;
+            this.labelControl15.Text = "labelControl15";
+            this.labelControl15.Visible = false;
+            // 
+            // TxtAciklama
+            // 
+            this.TxtAciklama.Location = new System.Drawing.Point(85, 4);
+            this.TxtAciklama.Name = "TxtAciklama";
+            this.TxtAciklama.Size = new System.Drawing.Size(377, 102);
+            this.TxtAciklama.TabIndex = 4;
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Location = new System.Drawing.Point(38, 13);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(41, 13);
+            this.labelControl13.TabIndex = 3;
+            this.labelControl13.Text = "Açıklama";
+            // 
             // pictureEdit13
             // 
             this.pictureEdit13.EditValue = ((object)(resources.GetObject("pictureEdit13.EditValue")));
@@ -369,70 +433,6 @@ namespace StockProject.Formlar.Personel
             this.pictureEdit13.Size = new System.Drawing.Size(25, 25);
             this.pictureEdit13.TabIndex = 2;
             // 
-            // labelControl13
-            // 
-            this.labelControl13.Location = new System.Drawing.Point(38, 13);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(41, 13);
-            this.labelControl13.TabIndex = 3;
-            this.labelControl13.Text = "Açıklama";
-            // 
-            // TxtAciklama
-            // 
-            this.TxtAciklama.Location = new System.Drawing.Point(85, 4);
-            this.TxtAciklama.Name = "TxtAciklama";
-            this.TxtAciklama.Size = new System.Drawing.Size(377, 102);
-            this.TxtAciklama.TabIndex = 4;
-            // 
-            // labelControl15
-            // 
-            this.labelControl15.Location = new System.Drawing.Point(6, 55);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(69, 13);
-            this.labelControl15.TabIndex = 5;
-            this.labelControl15.Text = "labelControl15";
-            this.labelControl15.Visible = false;
-            // 
-            // labelControl16
-            // 
-            this.labelControl16.Location = new System.Drawing.Point(6, 36);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(69, 13);
-            this.labelControl16.TabIndex = 6;
-            this.labelControl16.Text = "labelControl16";
-            this.labelControl16.Visible = false;
-            // 
-            // groupControl5
-            // 
-            this.groupControl5.Controls.Add(this.pictureEditKimlikArka);
-            this.groupControl5.Controls.Add(this.pictureEditKimlikOn);
-            this.groupControl5.Location = new System.Drawing.Point(8, 117);
-            this.groupControl5.Name = "groupControl5";
-            this.groupControl5.ShowCaption = false;
-            this.groupControl5.Size = new System.Drawing.Size(467, 119);
-            this.groupControl5.TabIndex = 5;
-            this.groupControl5.Text = "groupControl5";
-            // 
-            // pictureEditKimlikOn
-            // 
-            this.pictureEditKimlikOn.Location = new System.Drawing.Point(5, 5);
-            this.pictureEditKimlikOn.Name = "pictureEditKimlikOn";
-            this.pictureEditKimlikOn.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEditKimlikOn.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEditKimlikOn.Size = new System.Drawing.Size(226, 107);
-            this.pictureEditKimlikOn.TabIndex = 0;
-            this.pictureEditKimlikOn.EditValueChanged += new System.EventHandler(this.pictureEditKimlikOn_EditValueChanged);
-            // 
-            // pictureEditKimlikArka
-            // 
-            this.pictureEditKimlikArka.Location = new System.Drawing.Point(237, 5);
-            this.pictureEditKimlikArka.Name = "pictureEditKimlikArka";
-            this.pictureEditKimlikArka.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEditKimlikArka.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEditKimlikArka.Size = new System.Drawing.Size(225, 107);
-            this.pictureEditKimlikArka.TabIndex = 1;
-            this.pictureEditKimlikArka.EditValueChanged += new System.EventHandler(this.pictureEditKimlikArka_EditValueChanged);
-            // 
             // xtraTabPage1
             // 
             this.xtraTabPage1.Controls.Add(this.groupControl7);
@@ -443,45 +443,47 @@ namespace StockProject.Formlar.Personel
             this.xtraTabPage1.Size = new System.Drawing.Size(482, 239);
             this.xtraTabPage1.Text = "Bilgiler";
             // 
-            // groupControl3
+            // groupControl7
             // 
-            this.groupControl3.Controls.Add(this.TxtAdres);
-            this.groupControl3.Controls.Add(this.labelControl10);
-            this.groupControl3.Controls.Add(this.pictureEdit10);
-            this.groupControl3.Location = new System.Drawing.Point(8, 2);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.ShowCaption = false;
-            this.groupControl3.Size = new System.Drawing.Size(467, 112);
-            this.groupControl3.TabIndex = 2;
-            this.groupControl3.Text = "groupControl3";
+            this.groupControl7.Controls.Add(this.BtnGuncelle);
+            this.groupControl7.Controls.Add(this.BtnKaydet);
+            this.groupControl7.Controls.Add(this.BtnVazgec);
+            this.groupControl7.Location = new System.Drawing.Point(8, 180);
+            this.groupControl7.Name = "groupControl7";
+            this.groupControl7.ShowCaption = false;
+            this.groupControl7.Size = new System.Drawing.Size(466, 50);
+            this.groupControl7.TabIndex = 7;
+            this.groupControl7.Text = "groupControl7";
             // 
-            // pictureEdit10
+            // BtnGuncelle
             // 
-            this.pictureEdit10.EditValue = ((object)(resources.GetObject("pictureEdit10.EditValue")));
-            this.pictureEdit10.Location = new System.Drawing.Point(5, 5);
-            this.pictureEdit10.Name = "pictureEdit10";
-            this.pictureEdit10.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit10.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit10.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit10.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit10.Size = new System.Drawing.Size(25, 25);
-            this.pictureEdit10.TabIndex = 2;
+            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
+            this.BtnGuncelle.Location = new System.Drawing.Point(98, 5);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(118, 41);
+            this.BtnGuncelle.TabIndex = 2;
+            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
-            // labelControl10
+            // BtnKaydet
             // 
-            this.labelControl10.Location = new System.Drawing.Point(42, 14);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(28, 13);
-            this.labelControl10.TabIndex = 3;
-            this.labelControl10.Text = "Adres";
+            this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
+            this.BtnKaydet.Location = new System.Drawing.Point(222, 5);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(114, 41);
+            this.BtnKaydet.TabIndex = 1;
+            this.BtnKaydet.Text = "Kaydet";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
-            // TxtAdres
+            // BtnVazgec
             // 
-            this.TxtAdres.Location = new System.Drawing.Point(85, 5);
-            this.TxtAdres.Name = "TxtAdres";
-            this.TxtAdres.Size = new System.Drawing.Size(377, 100);
-            this.TxtAdres.TabIndex = 4;
+            this.BtnVazgec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnVazgec.ImageOptions.Image")));
+            this.BtnVazgec.Location = new System.Drawing.Point(342, 5);
+            this.BtnVazgec.Name = "BtnVazgec";
+            this.BtnVazgec.Size = new System.Drawing.Size(118, 41);
+            this.BtnVazgec.TabIndex = 0;
+            this.BtnVazgec.Text = "Vazgeç";
+            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
             // groupControl4
             // 
@@ -498,43 +500,13 @@ namespace StockProject.Formlar.Personel
             this.groupControl4.TabIndex = 3;
             this.groupControl4.Text = "groupControl4";
             // 
-            // TxtTelefon
+            // labelControl8
             // 
-            this.TxtTelefon.Location = new System.Drawing.Point(85, 21);
-            this.TxtTelefon.Name = "TxtTelefon";
-            this.TxtTelefon.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
-            this.TxtTelefon.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
-            this.TxtTelefon.Properties.MaskSettings.Set("mask", "(000) 000-0000");
-            this.TxtTelefon.Size = new System.Drawing.Size(143, 20);
-            this.TxtTelefon.TabIndex = 8;
-            // 
-            // pictureEdit9
-            // 
-            this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
-            this.pictureEdit9.Location = new System.Drawing.Point(5, 16);
-            this.pictureEdit9.Name = "pictureEdit9";
-            this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit9.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit9.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit9.Size = new System.Drawing.Size(25, 25);
-            this.pictureEdit9.TabIndex = 9;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Location = new System.Drawing.Point(38, 24);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(36, 13);
-            this.labelControl9.TabIndex = 10;
-            this.labelControl9.Text = "Telefon";
-            // 
-            // TxtMail
-            // 
-            this.TxtMail.Location = new System.Drawing.Point(319, 21);
-            this.TxtMail.Name = "TxtMail";
-            this.TxtMail.Size = new System.Drawing.Size(143, 20);
-            this.TxtMail.TabIndex = 11;
+            this.labelControl8.Location = new System.Drawing.Point(285, 24);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(28, 13);
+            this.labelControl8.TabIndex = 13;
+            this.labelControl8.Text = "e-Mail";
             // 
             // pictureEdit8
             // 
@@ -549,55 +521,83 @@ namespace StockProject.Formlar.Personel
             this.pictureEdit8.Size = new System.Drawing.Size(25, 25);
             this.pictureEdit8.TabIndex = 12;
             // 
-            // labelControl8
+            // TxtMail
             // 
-            this.labelControl8.Location = new System.Drawing.Point(285, 24);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(28, 13);
-            this.labelControl8.TabIndex = 13;
-            this.labelControl8.Text = "e-Mail";
+            this.TxtMail.Location = new System.Drawing.Point(319, 21);
+            this.TxtMail.Name = "TxtMail";
+            this.TxtMail.Size = new System.Drawing.Size(143, 20);
+            this.TxtMail.TabIndex = 11;
             // 
-            // groupControl7
+            // labelControl9
             // 
-            this.groupControl7.Controls.Add(this.BtnGuncelle);
-            this.groupControl7.Controls.Add(this.BtnKaydet);
-            this.groupControl7.Controls.Add(this.BtnVazgec);
-            this.groupControl7.Location = new System.Drawing.Point(8, 180);
-            this.groupControl7.Name = "groupControl7";
-            this.groupControl7.ShowCaption = false;
-            this.groupControl7.Size = new System.Drawing.Size(466, 50);
-            this.groupControl7.TabIndex = 7;
-            this.groupControl7.Text = "groupControl7";
+            this.labelControl9.Location = new System.Drawing.Point(38, 24);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(36, 13);
+            this.labelControl9.TabIndex = 10;
+            this.labelControl9.Text = "Telefon";
             // 
-            // BtnVazgec
+            // pictureEdit9
             // 
-            this.BtnVazgec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnVazgec.ImageOptions.Image")));
-            this.BtnVazgec.Location = new System.Drawing.Point(342, 5);
-            this.BtnVazgec.Name = "BtnVazgec";
-            this.BtnVazgec.Size = new System.Drawing.Size(118, 41);
-            this.BtnVazgec.TabIndex = 0;
-            this.BtnVazgec.Text = "Vazgeç";
-            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
+            this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
+            this.pictureEdit9.Location = new System.Drawing.Point(5, 16);
+            this.pictureEdit9.Name = "pictureEdit9";
+            this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit9.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit9.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit9.Size = new System.Drawing.Size(25, 25);
+            this.pictureEdit9.TabIndex = 9;
             // 
-            // BtnKaydet
+            // TxtTelefon
             // 
-            this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(98, 5);
-            this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(114, 41);
-            this.BtnKaydet.TabIndex = 1;
-            this.BtnKaydet.Text = "Kaydet";
-            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
+            this.TxtTelefon.Location = new System.Drawing.Point(85, 21);
+            this.TxtTelefon.Name = "TxtTelefon";
+            this.TxtTelefon.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.SimpleMaskManager));
+            this.TxtTelefon.Properties.MaskSettings.Set("MaskManagerSignature", "ignoreMaskBlank=True");
+            this.TxtTelefon.Properties.MaskSettings.Set("mask", "(000) 000-0000");
+            this.TxtTelefon.Size = new System.Drawing.Size(143, 20);
+            this.TxtTelefon.TabIndex = 8;
             // 
-            // BtnGuncelle
+            // groupControl3
             // 
-            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(218, 5);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(118, 41);
-            this.BtnGuncelle.TabIndex = 2;
-            this.BtnGuncelle.Text = "Güncelle";
-            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
+            this.groupControl3.Controls.Add(this.TxtAdres);
+            this.groupControl3.Controls.Add(this.labelControl10);
+            this.groupControl3.Controls.Add(this.pictureEdit10);
+            this.groupControl3.Location = new System.Drawing.Point(8, 2);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.ShowCaption = false;
+            this.groupControl3.Size = new System.Drawing.Size(467, 112);
+            this.groupControl3.TabIndex = 2;
+            this.groupControl3.Text = "groupControl3";
+            // 
+            // TxtAdres
+            // 
+            this.TxtAdres.Location = new System.Drawing.Point(85, 5);
+            this.TxtAdres.Name = "TxtAdres";
+            this.TxtAdres.Size = new System.Drawing.Size(377, 100);
+            this.TxtAdres.TabIndex = 4;
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Location = new System.Drawing.Point(42, 14);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(28, 13);
+            this.labelControl10.TabIndex = 3;
+            this.labelControl10.Text = "Adres";
+            // 
+            // pictureEdit10
+            // 
+            this.pictureEdit10.EditValue = ((object)(resources.GetObject("pictureEdit10.EditValue")));
+            this.pictureEdit10.Location = new System.Drawing.Point(5, 5);
+            this.pictureEdit10.Name = "pictureEdit10";
+            this.pictureEdit10.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit10.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit10.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit10.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit10.Size = new System.Drawing.Size(25, 25);
+            this.pictureEdit10.TabIndex = 2;
             // 
             // xtraTabControl1
             // 
@@ -640,30 +640,30 @@ namespace StockProject.Formlar.Personel
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAdSoyad.Properties)).EndInit();
             this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEditKimlikArka.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEditKimlikOn.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
             this.groupControl6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
-            this.groupControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEditKimlikOn.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEditKimlikArka.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
             this.xtraTabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
-            this.groupControl3.ResumeLayout(false);
-            this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
+            this.groupControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
-            this.groupControl7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -43,5 +43,21 @@ namespace StockProject.Formlar.Tanımlamalar
             //    XtraMessageBox.Show("Lütfen değerleri kontrol edip yeniden giriş yapın !", " Uyarı ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             //}
         }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void silToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingSource1.RemoveCurrent();
+            db.SaveChanges();
+        }
+
+        private void vazgeçToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

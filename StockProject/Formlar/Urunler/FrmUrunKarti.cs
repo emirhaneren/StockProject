@@ -42,6 +42,10 @@ namespace StockProject.Formlar.Urunler
                 lookUpEditBirim.EditValue = urun.Birim;
                 lookUpEditDurum.EditValue = urun.Durum;
             }
+            else
+            {
+                BtnGuncelle.Visible = false;
+            }
 
             //UrunGrup Listesi
             lookUpEditUrunGrup.Properties.DataSource = (from x in db.TblUrunGrup select new { x.UrunGrupID, x.UrunGrupAd }).ToList();
