@@ -48,7 +48,7 @@ namespace StockProject.Formlar.Araclar
             this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.webBrowser1);
             this.Name = "FrmYoutube";
-            this.Text = "FrmYoutube";
+            this.Text = "Youtube";
             this.Load += new System.EventHandler(this.FrmYoutube_Load);
             this.ResumeLayout(false);
 

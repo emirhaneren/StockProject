@@ -30,6 +30,15 @@
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kullanici" Type="nvarchar" MaxLength="20" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="20" />
+          <Property Name="Rol" Type="char" MaxLength="1" />
+        </EntityType>
         <EntityType Name="TblBireyselMusteri">
           <Key>
             <PropertyRef Name="BireyselID" />
@@ -453,10 +462,12 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="UrunHareketGrf" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DbStockProjectModelStoreContainer">
           <EntitySet Name="ilceler" EntityType="Self.ilceler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="iller" EntityType="Self.iller" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblBireyselMusteri" EntityType="Self.TblBireyselMusteri" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblBirim" EntityType="Self.TblBirim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblDepartman" EntityType="Self.TblDepartman" Schema="dbo" store:Type="Tables" />
@@ -1089,6 +1100,8 @@
             <End Role="iller" EntitySet="iller" />
             <End Role="TblKurumsalMusteri" EntitySet="TblKurumsalMusteri" />
           </AssociationSet>
+          <FunctionImport Name="UrunHareketGrf" ReturnType="Collection(DbStockProjectModel.UrunHareketGrf_Result)" />
+          <EntitySet Name="TblAdmin" EntityType="DbStockProjectModel.TblAdmin" />
         </EntityContainer>
         <EntityType Name="ilceler">
           <Key>
@@ -1171,6 +1184,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <ComplexType Name="UrunHareketGrf_Result">
+          <Property Type="String" Name="HareketTuru" Nullable="true" MaxLength="5" />
+          <Property Type="Int32" Name="Sayı" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kullanici" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Rol" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1362,6 +1388,24 @@
               <MappingFragment StoreEntitySet="iller">
                 <ScalarProperty Name="sehir" ColumnName="sehir" />
                 <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="UrunHareketGrf" FunctionName="DbStockProjectModel.Store.UrunHareketGrf">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DbStockProjectModel.UrunHareketGrf_Result">
+                <ScalarProperty Name="HareketTuru" ColumnName="HareketTuru" />
+                <ScalarProperty Name="Sayı" ColumnName="Sayı" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="TblAdmin">
+            <EntityTypeMapping TypeName="DbStockProjectModel.TblAdmin">
+              <MappingFragment StoreEntitySet="TblAdmin">
+                <ScalarProperty Name="Rol" ColumnName="Rol" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

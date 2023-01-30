@@ -44,6 +44,7 @@
         <AssociationConnector Association="DbStockProjectModel.FK_TblKurumsalMusteri_ilceler" />
         <AssociationConnector Association="DbStockProjectModel.FK_TblBireyselMusteri_iller" />
         <AssociationConnector Association="DbStockProjectModel.FK_TblKurumsalMusteri_iller" />
+        <EntityTypeShape EntityType="DbStockProjectModel.TblAdmin" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

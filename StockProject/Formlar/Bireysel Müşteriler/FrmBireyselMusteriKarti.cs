@@ -32,23 +32,30 @@ namespace StockProject.Formlar.Bireysel_Müşteriler
 
         private void FrmBireyselMusteriKarti_Load(object sender, EventArgs e)
         {
-            //Bireysel Müşteriler Listesinde Çift tıklayınca verilerin kartta açılması
-            if(id !=0)
+            try
             {
-                var bmusteri = repo.Find(x=>x.BireyselID==id);
-                TxtAdSoyad.Text = bmusteri.AdSoyad;
-                TxtTc.Text = bmusteri.TC;
-                TxtTelefon.Text = bmusteri.Telefon;
-                TxtMail.Text = bmusteri.Mail;
-                txtAciklama.Text = bmusteri.Aciklama;
-                TxtAdres.Text = bmusteri.Adres;
-                lookUpEditUlke.EditValue = bmusteri.Ulke;
-                lookUpEditSehir.EditValue = bmusteri.Sehir;
-                lookUpEditIlce.EditValue = bmusteri.Ilce;
+                //Bireysel Müşteriler Listesinde Çift tıklayınca verilerin kartta açılması
+                if (id != 0)
+                {
+                    var bmusteri = repo.Find(x => x.BireyselID == id);
+                    TxtAdSoyad.Text = bmusteri.AdSoyad;
+                    TxtTc.Text = bmusteri.TC;
+                    TxtTelefon.Text = bmusteri.Telefon;
+                    TxtMail.Text = bmusteri.Mail;
+                    txtAciklama.Text = bmusteri.Aciklama;
+                    TxtAdres.Text = bmusteri.Adres;
+                    lookUpEditUlke.EditValue = bmusteri.Ulke;
+                    lookUpEditSehir.EditValue = bmusteri.Sehir;
+                    lookUpEditIlce.EditValue = bmusteri.Ilce;
+                }
+                else
+                {
+                    BtnGuncelle.Visible = false;
+                }
             }
-            else
+            catch
             {
-                BtnGuncelle.Visible = false;
+                XtraMessageBox.Show("Bir hata oluştu lütfen girilen değerleri kontrol edin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             //lookupeditleri forma bağlama
             lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke select new { x.UlkeID, x.UlkeAd }).ToList();
@@ -71,20 +78,26 @@ namespace StockProject.Formlar.Bireysel_Müşteriler
         //Kaydetme işlemi
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            
-            t.AdSoyad = TxtAdSoyad.Text;
-            t.TC = TxtTc.Text;
-            t.Mail = TxtMail.Text;
-            t.Telefon = TxtTelefon.Text;
-            t.Aciklama = txtAciklama.Text;
-            t.Adres = TxtAdres.Text;
-            t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());
-            t.Sehir = int.Parse(lookUpEditSehir.EditValue.ToString());
-            t.Ilce =  int.Parse(lookUpEditIlce.EditValue.ToString());
-            t.Durum = 1;
+            try
+            {
+                t.AdSoyad = TxtAdSoyad.Text;
+                t.TC = TxtTc.Text;
+                t.Mail = TxtMail.Text;
+                t.Telefon = TxtTelefon.Text;
+                t.Aciklama = txtAciklama.Text;
+                t.Adres = TxtAdres.Text;
+                t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());
+                t.Sehir = int.Parse(lookUpEditSehir.EditValue.ToString());
+                t.Ilce = int.Parse(lookUpEditIlce.EditValue.ToString());
+                t.Durum = 1;
 
-            repo.TAdd(t);
-            XtraMessageBox.Show("Bireysel müşteri başarılı bir şekilde sisteme kaydedildi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                repo.TAdd(t);
+                XtraMessageBox.Show("Bireysel müşteri başarılı bir şekilde sisteme kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch
+            {
+                XtraMessageBox.Show("Bir hata oluştu lütfen girilen değerleri kontrol edin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)

@@ -339,7 +339,7 @@ namespace StockProject.Formlar.Personel
             this.xtraTabPage2.Controls.Add(this.groupControl6);
             this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(482, 239);
+            this.xtraTabPage2.Size = new System.Drawing.Size(482, 241);
             this.xtraTabPage2.Text = "Dökümanlar";
             // 
             // groupControl5

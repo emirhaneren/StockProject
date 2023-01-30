@@ -48,7 +48,7 @@ namespace StockProject.Formlar.Araclar
             this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.webBrowser1);
             this.Name = "FrmKurlar";
-            this.Text = "FrmKurlar";
+            this.Text = "Kurlar";
             this.Load += new System.EventHandler(this.FrmKurlar_Load);
             this.ResumeLayout(false);
 

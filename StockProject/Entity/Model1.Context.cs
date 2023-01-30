@@ -12,6 +12,8 @@ namespace StockProject.Entity
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DbStockProjectEntities : DbContext
     {
@@ -41,5 +43,11 @@ namespace StockProject.Entity
         public virtual DbSet<TblUrunHareket> TblUrunHareket { get; set; }
         public virtual DbSet<ilceler> ilceler { get; set; }
         public virtual DbSet<iller> iller { get; set; }
+        public virtual DbSet<TblAdmin> TblAdmin { get; set; }
+    
+        public virtual ObjectResult<UrunHareketGrf_Result> UrunHareketGrf()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<UrunHareketGrf_Result>("UrunHareketGrf");
+        }
     }
 }

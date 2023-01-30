@@ -1,7 +1,7 @@
 ﻿
 namespace StockProject.Formlar.Grafikler
 {
-    partial class UrunStokGrafigi
+    partial class FrmUrunHareketGrafigi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,38 +29,39 @@ namespace StockProject.Formlar.Grafikler
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.PieSeriesView pieSeriesView1 = new DevExpress.XtraCharts.PieSeriesView();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
             this.SuspendLayout();
             // 
             // chartControl1
             // 
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
             this.chartControl1.Name = "chartControl1";
-            series1.Name = "Urun-Stok";
+            series1.LegendTextPattern = "{A}";
+            series1.Name = "Urun-Hareket";
+            series1.View = pieSeriesView1;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.chartControl1.Size = new System.Drawing.Size(1184, 461);
             this.chartControl1.TabIndex = 0;
             // 
-            // UrunStokGrafigi
+            // FrmUrunHareketGrafigi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.chartControl1);
-            this.Name = "UrunStokGrafigi";
-            this.Text = "Ürün-Stok Grafiği";
-            this.Load += new System.EventHandler(this.UrunStokGrafigi_Load);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FrmUrunHareketGrafigi";
+            this.Text = "Ürün Hareket Grafiği";
+            this.Load += new System.EventHandler(this.FrmUrunHareketGrafigi_Load);
+            ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);

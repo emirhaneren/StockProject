@@ -132,14 +132,14 @@ namespace StockProject.Formlar.Tanımlamalar
             // silToolStripMenuItem
             // 
             this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.silToolStripMenuItem.Text = "Sil";
             this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
             // vazgeçToolStripMenuItem
             // 
             this.vazgeçToolStripMenuItem.Name = "vazgeçToolStripMenuItem";
-            this.vazgeçToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vazgeçToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.vazgeçToolStripMenuItem.Text = "Vazgeç";
             this.vazgeçToolStripMenuItem.Click += new System.EventHandler(this.vazgeçToolStripMenuItem_Click);
             // 
@@ -151,7 +151,7 @@ namespace StockProject.Formlar.Tanımlamalar
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.C);
             this.Name = "FrmGorev";
-            this.Text = "FrmGorev";
+            this.Text = "Gorev Tanımlamaları";
             this.Load += new System.EventHandler(this.FrmGorev_Load);
             ((System.ComponentModel.ISupportInitialize)(this.C)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

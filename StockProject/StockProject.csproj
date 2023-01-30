@@ -95,6 +95,9 @@
     <Compile Include="Entity\sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\TblAdmin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\TblBireyselMusteri.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -134,11 +137,38 @@
     <Compile Include="Entity\TblUrunHareket.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\UrunHareketGrf_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Admin\FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Admin\FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Admin\FrmSifreIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Admin\FrmSifreIslemleri.Designer.cs">
+      <DependentUpon>FrmSifreIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Admin\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Admin\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Ana Form\FrmAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Ana Form\FrmAnaForm.Designer.cs">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\Araclar\FrmGoogle.cs">
       <SubType>Form</SubType>
@@ -169,6 +199,12 @@
     </Compile>
     <Compile Include="Formlar\Bireysel Müşteriler\FrmBireyselMusteriListesi.Designer.cs">
       <DependentUpon>FrmBireyselMusteriListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Grafikler\FrmUrunHareketGrafigi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Grafikler\FrmUrunHareketGrafigi.Designer.cs">
+      <DependentUpon>FrmUrunHareketGrafigi.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\Grafikler\UrunStokGrafigi.cs">
       <SubType>Form</SubType>
@@ -284,6 +320,18 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Admin\FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Admin\FrmSifreIslemleri.resx">
+      <DependentUpon>FrmSifreIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Admin\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Ana Form\FrmAnaForm.resx">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Araclar\FrmGoogle.resx">
       <DependentUpon>FrmGoogle.cs</DependentUpon>
     </EmbeddedResource>
@@ -298,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Bireysel Müşteriler\FrmBireyselMusteriListesi.resx">
       <DependentUpon>FrmBireyselMusteriListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Grafikler\FrmUrunHareketGrafigi.resx">
+      <DependentUpon>FrmUrunHareketGrafigi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Grafikler\UrunStokGrafigi.resx">
       <DependentUpon>UrunStokGrafigi.cs</DependentUpon>
